@@ -1,0 +1,17 @@
+.location {
+  width: 100%;
+  max-width: 416px;
+  padding: 24px 16px 0;
+  border-radius: 10px;
+  box-shadow: 0px 7px 38px rgba(44, 62, 106, 0.25);
+
+  &__state {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 0;
+  }
+
+  &__row-selected {
+    display: flex;
+  }
+}

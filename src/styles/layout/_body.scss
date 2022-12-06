@@ -1,0 +1,6 @@
+@use '../abstracts/mixins' as *;
+
+body {
+  @include typo-main();
+  min-width: 360px;
+}

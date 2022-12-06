@@ -1,0 +1,8 @@
+@use './consts' as *;
+
+@mixin typo-main {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color_main;
+}

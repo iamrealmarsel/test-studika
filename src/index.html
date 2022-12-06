@@ -4,11 +4,95 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
     <title>Сту́дика</title>
   </head>
   <body>
     <main>
-      <div>Hello, world!</div>
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <button class="header__burger js-burger" type="button">
+              <div class="header__burger-lines"><i></i></div>
+            </button>
+            <img src="../public/img/logo.svg" alt="logo" />
+            <div class="header__location">
+              <img class="header__location-icon" src="../public/img/icons/city.svg" alt="city" />
+              <span class="header__cities">Любой регион</span>
+            </div>
+            <div class="header__search">
+              <img class="header__search-icon" src="../public/img/icons/search.svg" alt="search" />
+              <input
+                class="header__input input"
+                type="text"
+                placeholder="Учебное заведение, специальность или профессия"
+              />
+            </div>
+            <div class="header__favorite">
+              <div class="header__favorite-icon">
+                <img src="../public/img/icons/heart.svg" alt="heart" />
+              </div>
+              <span class="header__favorite-count">1</span>
+            </div>
+            <div class="header__profile">
+              <span class="header__name">Екатерина</span>
+              <img class="header__avatar" src="../public/img/avatar.jpg" alt="avatar" />
+            </div>
+          </div>
+          <div class="header__menu">
+            <ul class="header__items">
+              <li class="header__item">Вузы</li>
+              <li class="header__item">Колледжи</li>
+              <li class="header__item">Техникумы</li>
+              <li class="header__item">Училища</li>
+              <li class="header__item">Специальности</li>
+              <li class="header__item">Профессии</li>
+              <li class="header__item">Отзывы</li>
+              <li class="header__item">Учебным заведениям</li>
+              <li class="header__item">Тест на профориентацию</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="location">
+        <div class="location__search">
+          <input
+            class="location__input input"
+            type="text"
+            placeholder="Регион, город, населенный пункт"
+          />
+          <button class="location__clear" type="button">close</button>
+        </div>
+        <div class="location__row-selected">
+          <div class="location__selected">мос обл <button type="button">close</button></div>
+          <div class="location__selected">россия <button type="button">close</button></div>
+        </div>
+        <hr />
+        <ul class="location__states">
+          <li class="location__state">
+            <span class="location__state-title">питер обл</span>
+          </li>
+          <li class="location__state">
+            <span class="location__state-title">питер</span>
+            <span class="location__state-subtitle">питер обл</span>
+          </li>
+          <li class="location__state">
+            <span class="location__state-title">узбекистан</span>
+          </li>
+          <li class="location__state">
+            <span class="location__state-title">ташкент</span>
+            <span class="location__state-subtitle">узбекистан</span>
+          </li>
+        </ul>
+        <button class="location__button button" type="button">Сохранить</button>
+      </div>
+      <div class="mob-menu">
+        <button class="mob-menu__close" type="button">закрыть</button>
+        <p>Функционал мобильного меню не реализован :)</p>
+      </div>
+      <div class="overlay"></div>
     </main>
   </body>
 </html>
