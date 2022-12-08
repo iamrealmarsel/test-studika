@@ -11,6 +11,10 @@
     padding: 15px 15px 0;
   }
 
+  &__state._active {
+    outline: red solid 2px;
+  }
+
   &__row-selected {
     display: flex;
   }
